@@ -1,12 +1,12 @@
-package pro.ayay.backend.gateway;
+package pro.ayay.backend.authorization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class AuthApplication {
 
   public static void main(String[] args){
-    SpringApplication.run(Application.class, args);
+    SpringApplication.run(AuthApplication.class, args);
   }
 }

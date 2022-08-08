@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: authorization-open
+          uri: http://localhost:9001
+          predicates:
+            - Path=/api/v*/authorization/open/**
+        - id: authorization-public
+          uri: http://localhost:9001
+          predicates:
+            - Path=/api/v*/authorization/public/**
+          filters:
+            - name: Token
